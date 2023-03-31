@@ -14,7 +14,10 @@ const Header = () => {
             <span className="m-3">for</span>
             <span className="text-danger fw-bolder fst-italic">Programmer</span>
           </h1>
-          <img className="image" src={img1} alt=""></img>
+          <div>
+            <button className="btn fs-5 fw-bolder">Contact Us</button>
+            <img className="image" src={img1} alt=""></img>
+          </div>
         </div>
       </nav>
       <hr />
