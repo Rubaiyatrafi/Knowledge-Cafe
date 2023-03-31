@@ -9,9 +9,10 @@ const Header = () => {
         <div className="container-fluid">
           <h1>
             <span className="m-3 text-primary fw-bolder fst-italic">
-              Knowledge
+              Knowledge Cafe
             </span>
-            <span className="text-danger fw-bolder fst-italic">Cafe</span>
+            <span className="m-3">for</span>
+            <span className="text-danger fw-bolder fst-italic">Programmer</span>
           </h1>
           <img className="image" src={img1} alt=""></img>
         </div>

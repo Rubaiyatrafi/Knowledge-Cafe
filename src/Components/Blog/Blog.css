@@ -1,0 +1,23 @@
+.images {
+  width: 700px;
+  height: 450px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.authorimg {
+  width: 60px;
+  height: 80px;
+  border-radius: 500px;
+}
+.author {
+  margin-left: 315px;
+}
+.title {
+  width: 500px;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+.tag {
+  margin-right: 300px;
+}
