@@ -28,7 +28,12 @@ const Blog = (props) => {
           </p>
         </div>
         <div>
-          <p className="readtime fw-bold">{readTime} min to read</p>
+          <p className="readtime fw-bold">
+            {readTime} min to read{" "}
+            <button className="btn-bookmark">
+              <i class="fa-regular fa-bookmark"></i>
+            </button>
+          </p>
         </div>
       </div>
       <button type="button" className="btn btn-primary">

@@ -25,6 +25,12 @@
   margin-right: 400px;
 }
 .readtime {
-  margin-right: 400px;
+  margin-right: 320px;
   margin-top: 30px;
+}
+.btn-bookmark {
+  border: none;
+}
+.btn-bookmark:hover {
+  background-color: rgb(55, 158, 243);
 }
