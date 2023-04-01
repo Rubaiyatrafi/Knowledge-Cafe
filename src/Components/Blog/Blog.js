@@ -5,6 +5,7 @@ const Blog = (props) => {
   const { picture, authorImg, authorName, date, description, readTime } =
     props.blog;
   const addToBookmark = props.addToBookmark;
+  const markAsRead = props.markAsRead;
 
   return (
     <div>
@@ -41,7 +42,11 @@ const Blog = (props) => {
           </p>
         </div>
       </div>
-      <button type="button" className="btn btn-primary">
+      <button
+        onClick={() => markAsRead(props.blog)}
+        type="button"
+        className="btn btn-primary"
+      >
         Mark as Read
       </button>
       <hr />
