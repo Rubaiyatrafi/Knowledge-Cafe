@@ -4,6 +4,7 @@ import Blog from "../Blog/Blog";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
+  const [bookmark, setBookmark] = useState([]);
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
@@ -11,7 +12,8 @@ const Blogs = () => {
   }, []);
 
   const addToBookmark = (blog) => {
-    console.log(blog);
+    const newBookmark = [...bookmark, blog];
+    setBookmark(newBookmark);
   };
 
   return (
@@ -23,6 +25,7 @@ const Blogs = () => {
       </div>
       <div className="bookmark-container">
         <h1>Spent Time on read</h1>
+        <p>kk:{bookmark.length}</p>
       </div>
     </div>
   );
