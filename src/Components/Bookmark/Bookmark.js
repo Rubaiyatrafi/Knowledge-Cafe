@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Bookmark.css";
 
 const Bookmark = ({ bookmark }) => {
+  // const  [new , setNew]=useState([]);
+
   let bookmarkAsRead = [];
   for (const blog of bookmark) {
-    // bookmarkAsRead = blog.description;
     bookmarkAsRead = [...bookmarkAsRead, blog.description];
   }
 
