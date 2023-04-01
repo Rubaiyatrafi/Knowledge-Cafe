@@ -4,6 +4,8 @@ import "./Blog.css";
 const Blog = (props) => {
   const { picture, authorImg, authorName, date, description, readTime } =
     props.blog;
+  const addToBookmark = props.addToBookmark;
+
   return (
     <div>
       <img className="images" src={picture} alt="" />
@@ -30,8 +32,11 @@ const Blog = (props) => {
         <div>
           <p className="readtime fw-bold">
             {readTime} min to read{" "}
-            <button className="btn-bookmark">
-              <i class="fa-regular fa-bookmark"></i>
+            <button
+              onClick={() => addToBookmark(props.blog)}
+              className="btn-bookmark"
+            >
+              <i className="fa-regular fa-bookmark"></i>
             </button>
           </p>
         </div>
